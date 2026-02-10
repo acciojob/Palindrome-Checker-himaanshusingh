@@ -1,5 +1,6 @@
 function palindrome(str) {
-  return str === str.split("").reverse().join("");
+  const ans = str === str.split("").reverse().join("");
+  return { message: ans };
 }
 
 module.exports = palindrome;
