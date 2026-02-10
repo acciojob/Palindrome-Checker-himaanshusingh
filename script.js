@@ -1,6 +1,6 @@
 function palindrome(str) {
-  const ans = str === str.split("").reverse().join("");
-  return { message: ans };
+  const newStr = str.toLowerCase();
+  return newStr === newStr.split("").reverse().join("");
 }
 
 module.exports = palindrome;
